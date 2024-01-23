@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="./src/style/main.css" />
+    <script
+      src="https://kit.fontawesome.com/14afa35528.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="nav-bar d-flex justify-space-between align-center">
+          <a href="#"
+            ><img src="./src/img/logo-empresa.svg" alt="logo hjc" id="mainLogo"
+          /></a>
+
+          <button id="burguer">
+            <img src="./src/img/menu.png" alt="icono de menú" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="mainContent">
+      <h1>Proyectos inmobiliarios</h1>
+      <!-- Galeria de proyectos -->
+      <section class="galeriaApartamentos">
+        <div class="contenedorProyecto">
+          <div class="fotosProyectos">
+            <img src="./src/img/proyecto1.jpg" alt="foto del proyecto 1 " />
+          </div>
+          <div class="descripcionProyecto">
+            <h2>Proyecto 1</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+              corrupti error. Deserunt, laboriosam
+            </p>
+            <button class="botonAsesor" id="triggerModal1">
+              Habla con un asesor
+            </button>
+          </div>
+        </div>
+
+        <div class="contenedorProyecto">
+          <div class="fotosProyectos">
+            <img src="./src/img/proyecto2.jpg" alt="foto del proyecto 2 " />
+          </div>
+          <div class="descripcionProyecto">
+            <h2>Proyecto 2</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+              corrupti error. Deserunt, laboriosam
+            </p>
+            <button class="botonAsesor" id="triggerModal2">
+              Habla con un asesor
+            </button>
+          </div>
+        </div>
+
+        <div class="contenedorProyecto">
+          <div class="fotosProyectos">
+            <img src="./src/img/proyecto3.jpg" alt="foto del proyecto 3 " />
+          </div>
+          <div class="descripcionProyecto">
+            <h2>Proyecto 3</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+              corrupti error. Deserunt, laboriosam
+            </p>
+            <button class="botonAsesor" id="triggerModal3">
+              Habla con un asesor
+            </button>
+          </div>
+        </div>
+
+        <div class="contenedorProyecto">
+          <div class="fotosProyectos">
+            <img src="./src/img/proyecto4.jpg" alt="foto del proyecto 4 " />
+          </div>
+          <div class="descripcionProyecto">
+            <h2>Proyecto 4</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+              corrupti error. Deserunt, laboriosam
+            </p>
+            <button class="botonAsesor" id="triggerModal4">
+              Habla con un asesor
+            </button>
+          </div>
+        </div>
+
+        <div class="contenedorProyecto">
+          <div class="fotosProyectos">
+            <img src="./src/img/proyecto5.jpg" alt="foto del proyecto 5 " />
+          </div>
+
+          <div class="descripcionProyecto">
+            <h2>Proyecto 5</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+              corrupti error. Deserunt, laboriosam
+            </p>
+            <button class="botonAsesor" id="triggerModal5">
+              Habla con un asesor
+            </button>
+          </div>
+        </div>
+
+        <div class="contenedorProyecto">
+          <div class="fotosProyectos">
+            <img src="./src/img/proyecto6.jpg" alt="foto del proyecto 6 " />
+          </div>
+
+          <div class="descripcionProyecto">
+            <h2>Proyecto 6</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+              corrupti error. Deserunt, laboriosam
+            </p>
+            <button class="botonAsesor" id="triggerModal6">
+              Habla con un asesor
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <aside id="sidebar">
+      <button id="sidebarClose"><i class="fa-solid fa-xmark"></i></button>
+      <nav class="sidebar__nav">
+        <ul class="sidebar__menu">
+          <li>
+            <a class="sidebar__item" href="#"
+              ><i class="fa-solid fa-house"></i>Inicio</a
+            >
+          </li>
+          <li>
+            <a class="sidebar__item" href="#"
+              ><i class="fa-solid fa-layer-group"></i>Categorias</a
+            >
+          </li>
+          <li>
+            <a class="sidebar__item" href="#"
+              ><i class="fa-solid fa-money-check"></i>Cotización</a
+            >
+          </li>
+          <li>
+            <a class="sidebar__item" href="#"
+              ><i class="fa-solid fa-money-check-dollar"></i>Saldos</a
+            >
+          </li>
+          <li>
+            <a class="sidebar__item" href="#"
+              ><i class="fa-solid fa-user-tie"></i>Contacta un asesor</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <!-- Modal -->
+    <!-- Proyecto 1 -->
+    <div id="bgModal"></div>
+    <div class="modalContainer" id="proyecto1">
+      <button id="closeModal1" class="modalCloseBtn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modalForm">
+        <form id="text">
+          <label for="nombreUsuario">Nombres </label>
+          <input
+            type="text"
+            name="nombreUsuario"
+            id="nombreUsuario"
+            maxlength="20"
+            required
+          />
+
+          <br /><br />
+          <!-- Apellido -->
+          <label for="apellidosUsuario">Apellidos</label>
+          <input
+            type="text"
+            name="apellidosUsuario"
+            id="apellidosUsuario"
+            maxlength="20"
+            required
+          />
+
+          <br /><br />
+
+          <!-- Telefono -->
+          <label for="telefonoUsuario">Telefono: +57</label>
+          <input type="tel" name="telefonoUsuario" placeholder=" Número" />
+
+          <br /><br />
+          <!-- Mail -->
+          <label for="emailUsuario">Correo:</label>
+          <input type="email" id="emailUsuario" required />
+
+          <br /><br />
+
+          <!-- Tratamiento de datos -->
+          <input
+            type="checkbox"
+            name="autorizacionUsuario"
+            id="autorizacionUsuario"
+            checked
+          />
+          <label for="autorizacionUsuario"
+            >Autorizo el tratamiento de mis datos personales</label
+          >
+          <br />
+          <input
+            type="checkbox"
+            name="contactoConUsuario"
+            id="contactoConUsuario"
+          />
+          <label for="contactoConUsuario"
+            >Acepto recibir correos promocionales</label
+          >
+
+          <button class="botonForm" id="botonContacto">
+            Quiero ser contactado
+          </button>
+        </form>
+      </div>
+      <img
+        class="modalImg"
+        src="./src/img/proyecto1.jpg"
+        alt="Foto proyecto 1"
+      />
+    </div>
+
+    <!-- Proyecto 2 -->
+    <div id="bgModal2"></div>
+    <div class="modalContainer" id="proyecto2">
+      <button id="closeModal2" class="modalCloseBtn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modalForm">
+        <form id="text">
+          <label for="nombreUsuario">Nombres </label>
+          <input
+            type="text"
+            name="nombreUsuario"
+            id="nombreUsuario"
+            maxlength="20"
+            required
+          />
+
+          <br /><br />
+          <!-- Apellido -->
+          <label for="apellidosUsuario">Apellidos</label>
+          <input
+            type="text"
+            name="apellidosUsuario"
+            id="apellidosUsuario"
+            maxlength="20"
+            required
+          />
+
+          <br /><br />
+
+          <!-- Telefono -->
+          <label for="telefonoUsuario">Telefono: +57</label>
+          <input type="tel" name="telefonoUsuario" placeholder=" Número" />
+
+          <br /><br />
+          <!-- Mail -->
+          <label for="emailUsuario">Correo:</label>
+          <input type="email" id="emailUsuario" required />
+
+          <br /><br />
+
+          <!-- Tratamiento de datos -->
+          <input
+            type="checkbox"
+            name="autorizacionUsuario"
+            id="autorizacionUsuario"
+            checked
+          />
+          <label for="autorizacionUsuario"
+            >Autorizo el tratamiento de mis datos personales</label
+          >
+          <br />
+          <input
+            type="checkbox"
+            name="contactoConUsuario"
+            id="contactoConUsuario"
+          />
+          <label for="contactoConUsuario"
+            >Acepto recibir correos promocionales</label
+          >
+
+          <button class="botonForm" id="botonContacto">
+            Quiero ser contactado
+          </button>
+        </form>
+      </div>
+      <img
+        class="modalImg"
+        src="./src/img/proyecto2.jpg"
+        alt="Foto proyecto 2"
+      />
+    </div>
+
+    <!-- Proyecto 3 -->
+
+    <div id="bgModal3"></div>
+    <div class="modalContainer" id="proyecto3">
+      <button id="closeModal3" class="modalCloseBtn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modalForm">
+        <form id="text">
+          <label for="nombreUsuario">Nombres </label>
+          <input
+            type="text"
+            name="nombreUsuario"
+            id="nombreUsuario"
+            maxlength="20"
+            required
+          />
+
+          <br /><br />
+          <!-- Apellido -->
+          <label for="apellidosUsuario">Apellidos</label>
+          <input
+            type="text"
+            name="apellidosUsuario"
+            id="apellidosUsuario"
+            maxlength="20"
+            required
+          />
+
+          <br /><br />
+
+          <!-- Telefono -->
+          <label for="telefonoUsuario">Telefono: +57</label>
+          <input type="tel" name="telefonoUsuario" placeholder=" Número" />
+
+          <br /><br />
+          <!-- Mail -->
+          <label for="emailUsuario">Correo:</label>
+          <input type="email" id="emailUsuario" required />
+
+          <br /><br />
+
+          <!-- Tratamiento de datos -->
+          <input
+            type="checkbox"
+            name="autorizacionUsuario"
+            id="autorizacionUsuario"
+            checked
+          />
+          <label for="autorizacionUsuario"
+            >Autorizo el tratamiento de mis datos personales</label
+          >
+          <br />
+          <input
+            type="checkbox"
+            name="contactoConUsuario"
+            id="contactoConUsuario"
+          />
+          <label for="contactoConUsuario"
+            >Acepto recibir correos promocionales</label
+          >
+
+          <button class="botonForm" id="botonContacto">
+            Quiero ser contactado
+          </button>
+        </form>
+      </div>
+      <img
+        class="modalImg"
+        src="./src/img/proyecto3.jpg"
+        alt="Foto proyecto 3"
+      />
+    </div>
+
+    <!-- Proyecto 4 -->
+
+    <div id="bgModal4"></div>
+    <div class="modalContainer" id="proyecto4">
+      <button id="closeModal4" class="modalCloseBtn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modalForm">
+        <form id="text">
+          <label for="nombreUsuario">Nombres </label>
+          <input
+            type="text"
+            name="nombreUsuario"
+            id="nombreUsuario"
+            maxlength="20"
+            required
+          />
+
+          <br /><br />
+          <!-- Apellido -->
+          <label for="apellidosUsuario">Apellidos</label>
+          <input
+            type="text"
+            name="apellidosUsuario"
+            id="apellidosUsuario"
+            maxlength="20"
+            required
+          />
+
+          <br /><br />
+
+          <!-- Telefono -->
+          <label for="telefonoUsuario">Telefono: +57</label>
+          <input type="tel" name="telefonoUsuario" placeholder=" Número" />
+
+          <br /><br />
+          <!-- Mail -->
+          <label for="emailUsuario">Correo:</label>
+          <input type="email" id="emailUsuario" required />
+
+          <br /><br />
+
+          <!-- Tratamiento de datos -->
+          <input
+            type="checkbox"
+            name="autorizacionUsuario"
+            id="autorizacionUsuario"
+            checked
+          />
+          <label for="autorizacionUsuario"
+            >Autorizo el tratamiento de mis datos personales</label
+          >
+          <br />
+          <input
+            type="checkbox"
+            name="contactoConUsuario"
+            id="contactoConUsuario"
+          />
+          <label for="contactoConUsuario"
+            >Acepto recibir correos promocionales</label
+          >
+
+          <button class="botonForm" id="botonContacto">
+            Quiero ser contactado
+          </button>
+        </form>
+      </div>
+      <img
+        class="modalImg"
+        src="./src/img/proyecto4.jpg"
+        alt="Foto proyecto 4"
+      />
+    </div>
+
+    <!-- Proyecto 5 -->
+
+    <div id="bgModal5"></div>
+    <div class="modalContainer" id="proyecto5">
+      <button id="closeModal5" class="modalCloseBtn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modalForm">
+        <form id="text">
+          <label for="nombreUsuario">Nombres </label>
+          <input
+            type="text"
+            name="nombreUsuario"
+            id="nombreUsuario"
+            maxlength="20"
+            required
+          />
+
+          <br /><br />
+          <!-- Apellido -->
+          <label for="apellidosUsuario">Apellidos</label>
+          <input
+            type="text"
+            name="apellidosUsuario"
+            id="apellidosUsuario"
+            maxlength="20"
+            required
+          />
+
+          <br /><br />
+
+          <!-- Telefono -->
+          <label for="telefonoUsuario">Telefono: +57</label>
+          <input type="tel" name="telefonoUsuario" placeholder=" Número" />
+
+          <br /><br />
+          <!-- Mail -->
+          <label for="emailUsuario">Correo:</label>
+          <input type="email" id="emailUsuario" required />
+
+          <br /><br />
+
+          <!-- Tratamiento de datos -->
+          <input
+            type="checkbox"
+            name="autorizacionUsuario"
+            id="autorizacionUsuario"
+            checked
+          />
+          <label for="autorizacionUsuario"
+            >Autorizo el tratamiento de mis datos personales</label
+          >
+          <br />
+          <input
+            type="checkbox"
+            name="contactoConUsuario"
+            id="contactoConUsuario"
+          />
+          <label for="contactoConUsuario"
+            >Acepto recibir correos promocionales</label
+          >
+
+          <button class="botonForm" id="botonContacto">
+            Quiero ser contactado
+          </button>
+        </form>
+      </div>
+      <img
+        class="modalImg"
+        src="./src/img/proyecto5.jpg"
+        alt="Foto proyecto 2"
+      />
+    </div>
+
+    <!-- Proyecto 6 -->
+    <div id="bgModal6"></div>
+    <div class="modalContainer" id="proyecto6">
+      <button id="closeModal6" class="modalCloseBtn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modalForm">
+        <form id="text">
+          <label for="nombreUsuario">Nombres </label>
+          <input
+            type="text"
+            name="nombreUsuario"
+            id="nombreUsuario"
+            maxlength="20"
+            required
+          />
+
+          <br /><br />
+          <!-- Apellido -->
+          <label for="apellidosUsuario">Apellidos</label>
+          <input
+            type="text"
+            name="apellidosUsuario"
+            id="apellidosUsuario"
+            maxlength="20"
+            required
+          />
+
+          <br /><br />
+
+          <!-- Telefono -->
+          <label for="telefonoUsuario">Telefono: +57</label>
+          <input type="tel" name="telefonoUsuario" placeholder=" Número" />
+
+          <br /><br />
+          <!-- Mail -->
+          <label for="emailUsuario">Correo:</label>
+          <input type="email" id="emailUsuario" required />
+
+          <br /><br />
+
+          <!-- Tratamiento de datos -->
+          <input
+            type="checkbox"
+            name="autorizacionUsuario"
+            id="autorizacionUsuario"
+            checked
+          />
+          <label for="autorizacionUsuario"
+            >Autorizo el tratamiento de mis datos personales</label
+          >
+          <br />
+          <input
+            type="checkbox"
+            name="contactoConUsuario"
+            id="contactoConUsuario"
+          />
+          <label for="contactoConUsuario"
+            >Acepto recibir correos promocionales</label
+          >
+
+          <button class="botonForm" id="botonContacto">
+            Quiero ser contactado
+          </button>
+        </form>
+      </div>
+      <img
+        class="modalImg"
+        src="./src/img/proyecto6.jpg"
+        alt="Foto proyecto 6"
+      />
+    </div>
+
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
