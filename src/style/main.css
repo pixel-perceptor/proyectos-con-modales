@@ -61,6 +61,8 @@ body.openModal {
 
 .modalContainer.open {
   display: flex;
+  max-width: 750px;
+  max-height: 500px ;
 }
 
 .modalForm {
@@ -73,6 +75,10 @@ body.openModal {
   object-position: center;
 }
 
+#text {
+  text-decoration: none;
+  border-radius: 7px;
+}
 
 /*Menú*/
 
