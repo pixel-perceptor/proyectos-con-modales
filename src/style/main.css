@@ -62,17 +62,42 @@ body.openModal {
 .modalContainer.open {
   display: flex;
   max-width: 750px;
-  max-height: 500px ;
+  max-height: 500px;
+}
+
+@media (max-width: 480px) {
+  .modalContainer.open {
+    flex-direction: column-reverse;
+    height: 90vh;
+    max-height: none;
+    top: 5%;
+    width: 90vw;
+    justify-content: flex-end;
+  }
 }
 
 .modalForm {
   padding: 5rem;
 }
 
+@media (max-width: 480px) {
+  .modalForm {
+    padding: 2rem;
+  }
+}
+
 .modalImg {
   width: 50%;
   object-fit: cover;
   object-position: center;
+}
+
+@media (max-width: 480px) {
+  .modalImg {
+    width: 100%;
+    max-height: 20rem;
+
+  }
 }
 
 #text {
@@ -109,7 +134,7 @@ body.openModal {
 
 /* sidebar */
 #sidebar {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   background-color: #464646;
@@ -163,6 +188,14 @@ body.openModal {
   display: grid;
   grid-template-columns: 320px 320px 320px;
   grid-template-rows: 500px 500px;
+}
+
+@media (max-width: 480px) {
+  .galeriaApartamentos {
+    grid-template-columns: 1fr;
+    grid-template-rows: initial;
+    justify-items: center;
+  }
 }
 
 .contenedorProyecto {
