@@ -174,58 +174,60 @@
       </button>
       <div class="modalForm">
         <form id="text">
-          <label for="nombreUsuario">Nombres </label>
-          <input
+          <div class="formItem">
+            <input
             type="text"
             name="nombreUsuario"
             id="nombreUsuario"
             maxlength="20"
+            class="formInput"
+            
             required
-          />
+            />
+            <label for="nombreUsuario" class="formLabel">Nombre: </label>
+            
+          </div>
+
+          <div class="formItem">
+            <!-- Telefono -->
+            <input
+            type="tel"
+            name="telefonoUsuario"
+            class="formInput"
+            />
+            <label for="telefonoUsuario" class="formLabel">Telefono: </label>
+            
+          </div>
+
+          <div class="formItem">
+            <!-- Mail -->
+            <input type="email" id="emailUsuario" required               class="formInput"
+            />
+            <label for="emailUsuario" class="formLabel">Correo:</label>
+          </div>
 
           <br /><br />
-          <!-- Apellido -->
-          <label for="apellidosUsuario">Apellidos</label>
-          <input
-            type="text"
-            name="apellidosUsuario"
-            id="apellidosUsuario"
-            maxlength="20"
-            required
-          />
-
-          <br /><br />
-
-          <!-- Telefono -->
-          <label for="telefonoUsuario">Telefono: +57</label>
-          <input type="tel" name="telefonoUsuario" placeholder=" Número" />
-
-          <br /><br />
-          <!-- Mail -->
-          <label for="emailUsuario">Correo:</label>
-          <input type="email" id="emailUsuario" required />
-
-          <br /><br />
-
-          <!-- Tratamiento de datos -->
-          <input
-            type="checkbox"
-            name="autorizacionUsuario"
-            id="autorizacionUsuario"
-            checked
-          />
-          <label for="autorizacionUsuario"
-            >Autorizo el tratamiento de mis datos personales</label
-          >
-          <br />
-          <input
-            type="checkbox"
-            name="contactoConUsuario"
-            id="contactoConUsuario"
-          />
-          <label for="contactoConUsuario"
-            >Acepto recibir correos promocionales</label
-          >
+          <div class="formItem">
+            <!-- Tratamiento de datos -->
+            <input
+              type="checkbox"
+              name="autorizacionUsuario"
+              id="autorizacionUsuario"
+              checked
+            />
+            <label for="autorizacionUsuario" class="tratamientoDatos"
+              >Autorizo el tratamiento de mis datos personales</label
+            >
+            <br />
+            <input
+              type="checkbox"
+              name="contactoConUsuario"
+              id="contactoConUsuario"
+            />
+            <label for="contactoConUsuario" class="tratamientoDatos"
+              >Acepto recibir correos promocionales</label
+            >
+          </div>
 
           <button class="botonForm" id="botonContacto">
             Quiero ser contactado
@@ -247,58 +249,60 @@
       </button>
       <div class="modalForm">
         <form id="text">
-          <label for="nombreUsuario">Nombres </label>
-          <input
+          <div class="formItem">
+            <input
             type="text"
             name="nombreUsuario"
             id="nombreUsuario"
             maxlength="20"
+            class="formInput"
+            
             required
-          />
+            />
+            <label for="nombreUsuario" class="formLabel">Nombre: </label>
+          </div>
 
           <br /><br />
-          <!-- Apellido -->
-          <label for="apellidosUsuario">Apellidos</label>
-          <input
-            type="text"
-            name="apellidosUsuario"
-            id="apellidosUsuario"
-            maxlength="20"
-            required
-          />
+          <div class="formItem">
+            <!-- Telefono -->
+            <input
+            type="tel"
+            name="telefonoUsuario"
+            class="formInput"
+            />
+            <label for="telefonoUsuario" class="formLabel">Telefono: </label>
+            
+          </div>
+
+          <div class="formItem">
+            <!-- Mail -->
+            <input type="email" id="emailUsuario" required               class="formInput"
+            />
+            <label for="emailUsuario" class="formLabel">Correo:</label>
+          </div>
 
           <br /><br />
-
-          <!-- Telefono -->
-          <label for="telefonoUsuario">Telefono: +57</label>
-          <input type="tel" name="telefonoUsuario" placeholder=" Número" />
-
-          <br /><br />
-          <!-- Mail -->
-          <label for="emailUsuario">Correo:</label>
-          <input type="email" id="emailUsuario" required />
-
-          <br /><br />
-
-          <!-- Tratamiento de datos -->
-          <input
-            type="checkbox"
-            name="autorizacionUsuario"
-            id="autorizacionUsuario"
-            checked
-          />
-          <label for="autorizacionUsuario"
-            >Autorizo el tratamiento de mis datos personales</label
-          >
-          <br />
-          <input
-            type="checkbox"
-            name="contactoConUsuario"
-            id="contactoConUsuario"
-          />
-          <label for="contactoConUsuario"
-            >Acepto recibir correos promocionales</label
-          >
+          <div class="formItem">
+            <!-- Tratamiento de datos -->
+            <input
+              type="checkbox"
+              name="autorizacionUsuario"
+              id="autorizacionUsuario"
+              checked
+            />
+            <label for="autorizacionUsuario" class="tratamientoDatos"
+              >Autorizo el tratamiento de mis datos personales</label
+            >
+            <br />
+            <input
+              type="checkbox"
+              name="contactoConUsuario"
+              id="contactoConUsuario"
+            />
+            <label for="contactoConUsuario"class="tratamientoDatos"
+              >Acepto recibir correos promocionales</label
+            >
+          </div>
 
           <button class="botonForm" id="botonContacto">
             Quiero ser contactado
@@ -312,8 +316,8 @@
       />
     </div>
 
-    <!-- Proyecto 3 -->
 
+    <!-- Proyecto 3 -->
     <div id="bgModal3"></div>
     <div class="modalContainer" id="proyecto3">
       <button id="closeModal3" class="modalCloseBtn">
@@ -321,58 +325,60 @@
       </button>
       <div class="modalForm">
         <form id="text">
-          <label for="nombreUsuario">Nombres </label>
-          <input
+          <div class="formItem">
+            <input
             type="text"
             name="nombreUsuario"
             id="nombreUsuario"
             maxlength="20"
+            class="formInput"
+            
             required
-          />
+            />
+            <label for="nombreUsuario" class="formLabel">Nombre: </label>
+          </div>
 
           <br /><br />
-          <!-- Apellido -->
-          <label for="apellidosUsuario">Apellidos</label>
-          <input
-            type="text"
-            name="apellidosUsuario"
-            id="apellidosUsuario"
-            maxlength="20"
-            required
-          />
+          <div class="formItem">
+            <!-- Telefono -->
+            <input
+            type="tel"
+            name="telefonoUsuario"
+            class="formInput"
+            />
+            <label for="telefonoUsuario" class="formLabel">Telefono: </label>
+            
+          </div>
+
+          <div class="formItem">
+            <!-- Mail -->
+            <input type="email" id="emailUsuario" required               class="formInput"
+            />
+            <label for="emailUsuario" class="formLabel">Correo:</label>
+          </div>
 
           <br /><br />
-
-          <!-- Telefono -->
-          <label for="telefonoUsuario">Telefono: +57</label>
-          <input type="tel" name="telefonoUsuario" placeholder=" Número" />
-
-          <br /><br />
-          <!-- Mail -->
-          <label for="emailUsuario">Correo:</label>
-          <input type="email" id="emailUsuario" required />
-
-          <br /><br />
-
-          <!-- Tratamiento de datos -->
-          <input
-            type="checkbox"
-            name="autorizacionUsuario"
-            id="autorizacionUsuario"
-            checked
-          />
-          <label for="autorizacionUsuario"
-            >Autorizo el tratamiento de mis datos personales</label
-          >
-          <br />
-          <input
-            type="checkbox"
-            name="contactoConUsuario"
-            id="contactoConUsuario"
-          />
-          <label for="contactoConUsuario"
-            >Acepto recibir correos promocionales</label
-          >
+          <div class="formItem">
+            <!-- Tratamiento de datos -->
+            <input
+              type="checkbox"
+              name="autorizacionUsuario"
+              id="autorizacionUsuario"
+              checked
+            />
+            <label for="autorizacionUsuario" class="tratamientoDatos"
+              >Autorizo el tratamiento de mis datos personales</label
+            >
+            <br />
+            <input
+              type="checkbox"
+              name="contactoConUsuario"
+              id="contactoConUsuario"
+            />
+            <label for="contactoConUsuario" class="tratamientoDatos"
+              >Acepto recibir correos promocionales</label
+            >
+          </div>
 
           <button class="botonForm" id="botonContacto">
             Quiero ser contactado
@@ -395,58 +401,60 @@
       </button>
       <div class="modalForm">
         <form id="text">
-          <label for="nombreUsuario">Nombres </label>
-          <input
+          <div class="formItem">
+            <input
             type="text"
             name="nombreUsuario"
             id="nombreUsuario"
             maxlength="20"
+            class="formInput"
+            
             required
-          />
+            />
+            <label for="nombreUsuario" class="formLabel">Nombre: </label>
+          </div>
 
           <br /><br />
-          <!-- Apellido -->
-          <label for="apellidosUsuario">Apellidos</label>
-          <input
-            type="text"
-            name="apellidosUsuario"
-            id="apellidosUsuario"
-            maxlength="20"
-            required
-          />
+          <div class="formItem">
+            <!-- Telefono -->
+            <input
+            type="tel"
+            name="telefonoUsuario"
+            class="formInput"
+            />
+            <label for="telefonoUsuario" class="formLabel">Telefono: </label>
+            
+          </div>
+
+          <div class="formItem">
+            <!-- Mail -->
+            <input type="email" id="emailUsuario" required               class="formInput"
+            />
+            <label for="emailUsuario" class="formLabel">Correo:</label>
+          </div>
 
           <br /><br />
-
-          <!-- Telefono -->
-          <label for="telefonoUsuario">Telefono: +57</label>
-          <input type="tel" name="telefonoUsuario" placeholder=" Número" />
-
-          <br /><br />
-          <!-- Mail -->
-          <label for="emailUsuario">Correo:</label>
-          <input type="email" id="emailUsuario" required />
-
-          <br /><br />
-
-          <!-- Tratamiento de datos -->
-          <input
-            type="checkbox"
-            name="autorizacionUsuario"
-            id="autorizacionUsuario"
-            checked
-          />
-          <label for="autorizacionUsuario"
-            >Autorizo el tratamiento de mis datos personales</label
-          >
-          <br />
-          <input
-            type="checkbox"
-            name="contactoConUsuario"
-            id="contactoConUsuario"
-          />
-          <label for="contactoConUsuario"
-            >Acepto recibir correos promocionales</label
-          >
+          <div class="formItem">
+            <!-- Tratamiento de datos -->
+            <input
+              type="checkbox"
+              name="autorizacionUsuario"
+              id="autorizacionUsuario"
+              checked
+            />
+            <label for="autorizacionUsuario" class="tratamientoDatos"
+              >Autorizo el tratamiento de mis datos personales</label
+            >
+            <br />
+            <input
+              type="checkbox"
+              name="contactoConUsuario"
+              id="contactoConUsuario"
+            />
+            <label for="contactoConUsuario" class="tratamientoDatos"
+              >Acepto recibir correos promocionales</label
+            >
+          </div>
 
           <button class="botonForm" id="botonContacto">
             Quiero ser contactado
@@ -469,58 +477,60 @@
       </button>
       <div class="modalForm">
         <form id="text">
-          <label for="nombreUsuario">Nombres </label>
-          <input
+          <div class="formItem">
+            <input
             type="text"
             name="nombreUsuario"
             id="nombreUsuario"
             maxlength="20"
+            class="formInput"
+            
             required
-          />
+            />
+            <label for="nombreUsuario" class="formLabel">Nombre: </label>
+          </div>
 
           <br /><br />
-          <!-- Apellido -->
-          <label for="apellidosUsuario">Apellidos</label>
-          <input
-            type="text"
-            name="apellidosUsuario"
-            id="apellidosUsuario"
-            maxlength="20"
-            required
-          />
+          <div class="formItem">
+            <!-- Telefono -->
+            <input
+            type="tel"
+            name="telefonoUsuario"
+            class="formInput"
+            />
+            <label for="telefonoUsuario" class="formLabel">Telefono: </label>
+            
+          </div>
+
+          <div class="formItem">
+            <!-- Mail -->
+            <input type="email" id="emailUsuario" required               class="formInput"
+            />
+            <label for="emailUsuario" class="formLabel">Correo:</label>
+          </div>
 
           <br /><br />
-
-          <!-- Telefono -->
-          <label for="telefonoUsuario">Telefono: +57</label>
-          <input type="tel" name="telefonoUsuario" placeholder=" Número" />
-
-          <br /><br />
-          <!-- Mail -->
-          <label for="emailUsuario">Correo:</label>
-          <input type="email" id="emailUsuario" required />
-
-          <br /><br />
-
-          <!-- Tratamiento de datos -->
-          <input
-            type="checkbox"
-            name="autorizacionUsuario"
-            id="autorizacionUsuario"
-            checked
-          />
-          <label for="autorizacionUsuario"
-            >Autorizo el tratamiento de mis datos personales</label
-          >
-          <br />
-          <input
-            type="checkbox"
-            name="contactoConUsuario"
-            id="contactoConUsuario"
-          />
-          <label for="contactoConUsuario"
-            >Acepto recibir correos promocionales</label
-          >
+          <div class="formItem">
+            <!-- Tratamiento de datos -->
+            <input
+              type="checkbox"
+              name="autorizacionUsuario"
+              id="autorizacionUsuario"
+              checked
+            />
+            <label for="autorizacionUsuario" class="tratamientoDatos"
+              >Autorizo el tratamiento de mis datos personales</label
+            >
+            <br />
+            <input
+              type="checkbox"
+              name="contactoConUsuario"
+              id="contactoConUsuario"
+            />
+            <label for="contactoConUsuario" class="tratamientoDatos"
+              >Acepto recibir correos promocionales</label
+            >
+          </div>
 
           <button class="botonForm" id="botonContacto">
             Quiero ser contactado
@@ -530,7 +540,7 @@
       <img
         class="modalImg"
         src="./src/img/proyecto5.jpg"
-        alt="Foto proyecto 2"
+        alt="Foto proyecto 5"
       />
     </div>
 
@@ -542,58 +552,60 @@
       </button>
       <div class="modalForm">
         <form id="text">
-          <label for="nombreUsuario">Nombres </label>
-          <input
+          <div class="formItem">
+            <input
             type="text"
             name="nombreUsuario"
             id="nombreUsuario"
             maxlength="20"
+            class="formInput"
+            
             required
-          />
+            />
+            <label for="nombreUsuario" class="formLabel">Nombre: </label>
+          </div>
 
           <br /><br />
-          <!-- Apellido -->
-          <label for="apellidosUsuario">Apellidos</label>
-          <input
-            type="text"
-            name="apellidosUsuario"
-            id="apellidosUsuario"
-            maxlength="20"
-            required
-          />
+          <div class="formItem">
+            <!-- Telefono -->
+            <input
+            type="tel"
+            name="telefonoUsuario"
+            class="formInput"
+            />
+            <label for="telefonoUsuario" class="formLabel">Telefono: </label>
+            
+          </div>
+
+          <div class="formItem">
+            <!-- Mail -->
+            <input type="email" id="emailUsuario" required               class="formInput"
+            />
+            <label for="emailUsuario" class="formLabel">Correo:</label>
+          </div>
 
           <br /><br />
-
-          <!-- Telefono -->
-          <label for="telefonoUsuario">Telefono: +57</label>
-          <input type="tel" name="telefonoUsuario" placeholder=" Número" />
-
-          <br /><br />
-          <!-- Mail -->
-          <label for="emailUsuario">Correo:</label>
-          <input type="email" id="emailUsuario" required />
-
-          <br /><br />
-
-          <!-- Tratamiento de datos -->
-          <input
-            type="checkbox"
-            name="autorizacionUsuario"
-            id="autorizacionUsuario"
-            checked
-          />
-          <label for="autorizacionUsuario"
-            >Autorizo el tratamiento de mis datos personales</label
-          >
-          <br />
-          <input
-            type="checkbox"
-            name="contactoConUsuario"
-            id="contactoConUsuario"
-          />
-          <label for="contactoConUsuario"
-            >Acepto recibir correos promocionales</label
-          >
+          <div class="formItem">
+            <!-- Tratamiento de datos -->
+            <input
+              type="checkbox"
+              name="autorizacionUsuario"
+              id="autorizacionUsuario"
+              checked
+            />
+            <label for="autorizacionUsuario" class="tratamientoDatos"
+              >Autorizo el tratamiento de mis datos personales</label
+            >
+            <br />
+            <input
+              type="checkbox"
+              name="contactoConUsuario"
+              id="contactoConUsuario"
+            />
+            <label for="contactoConUsuario" class="tratamientoDatos"
+              >Acepto recibir correos promocionales</label
+            >
+          </div>
 
           <button class="botonForm" id="botonContacto">
             Quiero ser contactado
