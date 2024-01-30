@@ -73,7 +73,9 @@ body.openModal {
   border-bottom: 1px solid;
 }
 
-
+.formInput:focus {
+  border-color: #ff0000;
+}
 
 
 .formLabel {
